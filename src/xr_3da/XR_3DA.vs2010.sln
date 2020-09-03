@@ -50,20 +50,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xrStatisticConvert", "xrSta
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xrLua", "..\xrLua\xrLua.vcxproj", "{9ACE5473-6D68-4B96-AC42-B39EABA0FE1F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xrStalker", "..\resources\xrstalker.vcxproj", "{90F938A1-176A-4379-A3D1-DD516E8A6DC1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xrstalker", "..\resources\xrstalker.vcxproj", "{90F938A1-176A-4379-A3D1-DD516E8A6DC1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Router", "..\xrOpenAL\OpenAL-Windows\Router\Router.vcxproj", "{566551F4-4EF1-4CB4-A131-F982E7606907}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B067556-B314-4B68-A34E-E83FB9F9AD4C}"
-EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 1
-		SccProjectUniqueName0 = ..\\..\\GAMEDATA\\xrstalker.vcproj
-		SccProjectName0 = \u0022$/xrStalker\u0022,\u0020JSYAAAAA
-		SccLocalPath0 = ..\\..\\GAMEDATA
-		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_Dedicated|Win32 = Debug_Dedicated|Win32
 		Debug|Win32 = Debug|Win32
