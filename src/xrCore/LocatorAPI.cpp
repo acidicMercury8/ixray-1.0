@@ -233,9 +233,9 @@ void CLocatorAPI::Register		(LPCSTR name, u32 vfs, u32 crc, u32 ptr, u32 size_re
 //		char* str		= LPSTR(I->name);
 //		xr_free			(str);
 		desc.name		= I->name;
-		*I				= desc;
 //		files.erase		(I);
 //		files.insert	(desc); 
+		const_cast<file&>(*I)	= desc;
 		return;
 	}
 	else {
