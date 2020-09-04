@@ -222,7 +222,7 @@ if(!psNET_direct_connect)
 	string64				password_str = "";
 	if (strstr(options, "psw="))
 	{
-		char* PSW = strstr(options, "psw=") + 4;
+		const char* PSW = strstr(options, "psw=") + 4;
 		if (strchr(PSW, '/')) 
 			strncpy(password_str, PSW, strchr(PSW, '/') - PSW);
 		else
