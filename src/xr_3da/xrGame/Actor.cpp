@@ -1698,7 +1698,7 @@ CEntityConditionSimple *CActor::create_entity_condition	(CEntityConditionSimple*
 
 DLL_Pure *CActor::_construct			()
 {
-	m_pPhysics_support				=	xr_new<CCharacterPhysicsSupport>(CCharacterPhysicsSupport::EType::etActor,this);
+	m_pPhysics_support				=	xr_new<CCharacterPhysicsSupport>(CCharacterPhysicsSupport::etActor,this);
 	CEntityAlive::_construct		();
 	CInventoryOwner::_construct		();
 	CStepManager::_construct		();

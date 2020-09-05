@@ -88,12 +88,12 @@ case etActor:
 	m_PhysicMovementControl->SetRestrictionType(CPHCharacter::rtActor);
 	break;
 case etStalker:
-	m_PhysicMovementControl->AllocateCharacterObject(CPHMovementControl::CharacterType::ai);
+	m_PhysicMovementControl->AllocateCharacterObject(CPHMovementControl::ai);
 	m_PhysicMovementControl->SetRestrictionType(CPHCharacter::rtStalker);
 	m_PhysicMovementControl->SetActorMovable(false);
 	break;
 case etBitting:
-	m_PhysicMovementControl->AllocateCharacterObject(CPHMovementControl::CharacterType::ai);
+	m_PhysicMovementControl->AllocateCharacterObject(CPHMovementControl::ai);
 }
 };
 

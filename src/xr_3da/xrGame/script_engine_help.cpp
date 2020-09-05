@@ -45,7 +45,7 @@ xr_string to_string					(luabind::object const& o)
 
 void strreplaceall						(xr_string &str, LPCSTR S, LPCSTR N)
 {
-	LPSTR	A;
+	LPCSTR	A;
 	int		S_len = xr_strlen(S);
 	while ((A = strstr(str.c_str(),S)) != 0)
 		str.replace(A - str.c_str(),S_len,N);

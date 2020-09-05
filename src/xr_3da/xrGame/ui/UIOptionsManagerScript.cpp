@@ -42,13 +42,13 @@ void CUIOptionsManagerScript::script_register(lua_State *L)
 		[
 			class_<CUIOptionsManagerScript>("COptionsManager")
 			.def(							constructor<>())
-			.def("SaveBackupValues",	CUIOptionsManagerScript::SaveBackupValues )
-			.def("SetCurrentValues",	CUIOptionsManagerScript::SetCurrentValues )
-			.def("SaveValues",			CUIOptionsManagerScript::SaveValues )
-			.def("IsGroupChanged",		CUIOptionsManagerScript::IsGroupChanged )
-			.def("UndoGroup",			CUIOptionsManagerScript::UndoGroup )
-			.def("OptionsPostAccept",	CUIOptionsManagerScript::OptionsPostAccept )
-			.def("SendMessage2Group",	CUIOptionsManagerScript::SendMessage2Group )
+			.def("SaveBackupValues",	&CUIOptionsManagerScript::SaveBackupValues )
+			.def("SetCurrentValues",	&CUIOptionsManagerScript::SetCurrentValues )
+			.def("SaveValues",			&CUIOptionsManagerScript::SaveValues )
+			.def("IsGroupChanged",		&CUIOptionsManagerScript::IsGroupChanged )
+			.def("UndoGroup",			&CUIOptionsManagerScript::UndoGroup )
+			.def("OptionsPostAccept",	&CUIOptionsManagerScript::OptionsPostAccept )
+			.def("SendMessage2Group",	&CUIOptionsManagerScript::SendMessage2Group )
 			
 		];
 }

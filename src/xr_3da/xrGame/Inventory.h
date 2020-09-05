@@ -21,7 +21,7 @@ public:
 	int						m_blockCounter;
 };
 
-typedef svector<CInventorySlot,SLOTS_TOTAL> TISlotArr;
+typedef xr_vector<CInventorySlot> TISlotArr;
 
 
 class CInventory

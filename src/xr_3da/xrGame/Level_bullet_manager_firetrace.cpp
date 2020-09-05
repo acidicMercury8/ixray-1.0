@@ -467,7 +467,7 @@ std::pair<float, float>  CBulletManager::ObjectHit	(SBullet* bullet, const Fvect
 		#endif		
 	}
 #ifdef DEBUG
-	extern g_bDrawBulletHit;
+	extern BOOL g_bDrawBulletHit;
 	if(g_bDrawBulletHit)
 		g_hit[bullet_state].push_back(dbg_bullet_pos);
 #endif 

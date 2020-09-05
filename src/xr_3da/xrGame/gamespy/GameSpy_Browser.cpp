@@ -141,7 +141,7 @@ void	CGameSpy_Browser::LoadGameSpy(HMODULE hGameSpyDLL)
 	GAMESPY_LOAD_FN(xrGS_ServerBrowserErrorDesc);
 }
 
-static services_checked = false;
+static bool services_checked = false;
 
 bool	CGameSpy_Browser::Init(CServerList* pServerList)
 {

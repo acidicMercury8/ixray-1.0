@@ -104,6 +104,6 @@ void CScriptMovementAction::script_register(lua_State *L)
 			.def("patrol",						&CScriptMovementAction::SetPatrolPath)
 			.def("position",					&CScriptMovementAction::SetPosition)
 			.def("input",						&CScriptMovementAction::SetInputKeys)
-			.def("completed",					(bool (CScriptMovementAction::*)())(CScriptMovementAction::completed))
+			.def("completed",					(bool (CScriptMovementAction::*)())(&CScriptMovementAction::completed))
 	];
 }

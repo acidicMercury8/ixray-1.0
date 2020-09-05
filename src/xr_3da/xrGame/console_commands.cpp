@@ -617,7 +617,7 @@ public:
 			  Console->Hide			();
 			  string_path			fn;
 			  u32		loops	=	0;
-			  LPSTR		comma	=	strchr(args,',');
+			  LPSTR		comma	=	strchr(const_cast<LPSTR>(args),',');
 			  if (comma)	{
 				  loops			=	atoi	(comma+1);
 				  *comma		=	0;	//. :)

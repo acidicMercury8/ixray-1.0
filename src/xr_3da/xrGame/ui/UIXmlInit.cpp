@@ -1081,25 +1081,25 @@ bool CUIXmlInit::InitMultiText(CUIXml& xml_doc, LPCSTR path, int index, CUIStati
 	strconcat(buf,path,":text_color:e");
 	if (xml_doc.NavigateToNode(buf,index)){
 		color			= GetColor(xml_doc, buf, index, 0x00);
-		pWnd->SetTextColor(color, CUIStatic::E4States::E);
+		pWnd->SetTextColor(color, CUIStatic::E);
 	}
 
 	strconcat(buf,path,":text_color:d");
 	if (xml_doc.NavigateToNode(buf,index)){
 		color			= GetColor(xml_doc, buf, index, 0x00);
-		pWnd->SetTextColor(color,CUIStatic::E4States::D);
+		pWnd->SetTextColor(color,CUIStatic::D);
 	}
 
 	strconcat(buf,path,":text_color:t");
 	if (xml_doc.NavigateToNode(buf, index)){
 		color			= GetColor(xml_doc, buf, index, 0x00);
-		pWnd->SetTextColor(color,CUIStatic::E4States::T);
+		pWnd->SetTextColor(color,CUIStatic::T);
 	}
 
 	strconcat(buf,path,":text_color:h");
 	if (xml_doc.NavigateToNode(buf,index)){
 		color			= GetColor(xml_doc, buf, index, 0x00);
-		pWnd->SetTextColor(color,CUIStatic::E4States::H);
+		pWnd->SetTextColor(color,CUIStatic::H);
 	}
 
 	return true;

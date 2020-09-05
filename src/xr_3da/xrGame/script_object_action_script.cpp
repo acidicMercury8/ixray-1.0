@@ -49,8 +49,8 @@ void CScriptObjectAction::script_register(lua_State *L)
 			.def(								constructor<MonsterSpace::EObjectAction>())
 			.def(								constructor<LPCSTR,MonsterSpace::EObjectAction>())
 			.def("action",						&CScriptObjectAction::SetObjectAction)
-			.def("object",						(void (CScriptObjectAction::*)(LPCSTR))(CScriptObjectAction::SetObject))
-			.def("object",						(void (CScriptObjectAction::*)(CScriptGameObject*))(CScriptObjectAction::SetObject))
-			.def("completed",					(bool (CScriptObjectAction::*)())(CScriptObjectAction::completed))
+			.def("object",						(void (CScriptObjectAction::*)(LPCSTR))(&CScriptObjectAction::SetObject))
+			.def("object",						(void (CScriptObjectAction::*)(CScriptGameObject*))(&CScriptObjectAction::SetObject))
+			.def("completed",					(bool (CScriptObjectAction::*)())(&CScriptObjectAction::completed))
 	];
 }
