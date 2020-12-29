@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Statistic">
+      <UniqueIdentifier>{75c83c6e-1316-4aef-a20f-1e63ae717eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{7cb61587-f50a-4810-940f-dae19b3cc5c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Statistic.cpp">
+      <Filter>Statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="Statistic_Load.cpp">
+      <Filter>Statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="Statistic_Save.cpp">
+      <Filter>Statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgOut.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="xrStatisticConvert.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Statistic.h">
+      <Filter>Statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
