@@ -14,6 +14,17 @@ ipch/
 *.VC.VC.opendb
 *.aps
 
+# Build results
+src/**/Debug*/
+src/**/*Mixed*/
+src/**/Release*/
+*.lib
+*.exp
+*.dll
+*.pdb
+*.ilk
+*.map
+
 # Migrating report files
 _UpgradeReport_Files/
 UpgradeLog*.XML
