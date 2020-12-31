@@ -20,6 +20,7 @@ src/**/*Mixed*/
 src/**/Release*/
 *.lib
 *.exp
+*.exe
 *.dll
 *.pdb
 *.ilk
