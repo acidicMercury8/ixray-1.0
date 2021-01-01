@@ -66,7 +66,7 @@ friend class CPHElement;
 IC bool HaveElements		()		{return m_end_el_num!=m_start_el_num;}
 IC bool HaveJoints			()		{return m_start_jt_num!=m_end_jt_num;}
 public:
-IC sub_diapasone(const CShellSplitInfo& sub)
+IC void sub_diapasone(const CShellSplitInfo& sub)
 {
 	sub_diapasones(m_start_el_num,m_end_el_num,sub.m_start_el_num,sub.m_end_el_num);
 	sub_diapasones(m_start_jt_num,m_end_jt_num,sub.m_start_jt_num,sub.m_end_jt_num);

@@ -65,12 +65,12 @@ void CUIStaticItem::Init(LPCSTR tex, LPCSTR sh, float left, float top, u32 align
 }
 //--------------------------------------------------------------------
 
-void CUIStaticItem::Render		(const ref_shader& sh)
+void CUIStaticItem::Render()
 {
 	VERIFY(g_bRendering);
 	// установить обязательно перед вызовом CustomItem::Render() !!!
-	VERIFY(sh?sh:hShader);
-	RCache.set_Shader			(sh?sh:hShader);
+	VERIFY(hShader);
+	RCache.set_Shader			(hShader);
 	if(alpha_ref!=-1)
 		CHK_DX(HW.pDevice->SetRenderState(D3DRS_ALPHAREF,alpha_ref));
 	// convert&set pos
@@ -110,12 +110,12 @@ void CUIStaticItem::Render		(const ref_shader& sh)
 }
 //--------------------------------------------------------------------
 
-void CUIStaticItem::Render(float angle, const ref_shader& sh)
+void CUIStaticItem::Render(float angle)
 {
 	VERIFY(g_bRendering);
 	// установить обязательно перед вызовом CustomItem::Render() !!!
-	VERIFY(sh?sh:hShader);
-	RCache.set_Shader			(sh?sh:hShader);
+	VERIFY						(hShader);
+	RCache.set_Shader			(hShader);
 	if(alpha_ref!=-1)
 		CHK_DX(HW.pDevice->SetRenderState(D3DRS_ALPHAREF,alpha_ref));
 	// convert&set pos

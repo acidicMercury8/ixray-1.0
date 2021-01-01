@@ -21,9 +21,9 @@
 #include <dinput.h>				//remove me !!!
 #include "../../xr_input.h"		//remove me !!!
 
-const				SCROLLBARS_SHIFT			= 5;
-const				VSCROLLBAR_STEP				= 20; // В пикселях
-const				HSCROLLBAR_STEP				= 20; // В пикселях
+const	int			SCROLLBARS_SHIFT			= 5;
+const	int			VSCROLLBAR_STEP				= 20; // В пикселях
+const	int			HSCROLLBAR_STEP				= 20; // В пикселях
 
 static bool			MAP_FLY_MODE				= true;
 

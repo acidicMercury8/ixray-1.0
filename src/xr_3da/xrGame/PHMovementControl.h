@@ -23,7 +23,7 @@ class CPHMovementControl
 {
 	collide::rq_results		storage;
 
-static const path_few_point=10;
+static const int path_few_point=10;
 
 public:
 CElevatorState			*ElevatorState  ();

@@ -157,7 +157,7 @@ float					game_sv_GameState::get_option_f				(LPCSTR lst, LPCSTR name, float def
 {
 	string64		op;
 	strconcat		(op,"/",name,"=");
-	LPSTR found =	strstr(lst,op);
+	LPCSTR found =	strstr(lst,op);
 
 	if (found)
 	{	
@@ -717,7 +717,7 @@ void game_sv_GameState::NewPlayerName_Replace	(void* pClient, LPCSTR NewPlayerNa
 	strcpy(tmpName, ((IClient*)pClient)->Name.c_str());
 	*(strstr(tmpName, "name=")+5) = 0;
 	sprintf(tmpName, "%s%s", tmpName, NewPlayerName);
-	char* ptmp = strstr(strstr(((IClient*)pClient)->Name.c_str(), "name="), "/");
+	const char* ptmp = strstr(strstr(((IClient*)pClient)->Name.c_str(), "name="), "/");
 	if (ptmp)
 		sprintf(tmpName, "%s%s", tmpName, ptmp);
 	((IClient*)pClient)->Name._set(tmpName);

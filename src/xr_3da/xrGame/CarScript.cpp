@@ -29,7 +29,7 @@ void CCar::script_register(lua_State *L)
 				]
 		.def("Action",			&CCar::Action)
 //		.def("SetParam",		(void (CCar::*)(int,Fvector2)) CCar::SetParam)
-		.def("SetParam",		(void (CCar::*)(int,Fvector)) CCar::SetParam)
+		.def("SetParam",		(void (CCar::*)(int,Fvector)) &CCar::SetParam)
 		.def("CanHit",			&CCar::WpnCanHit)
 		.def("FireDirDiff",		&CCar::FireDirDiff)
 		.def("IsObjectVisible",	&CCar::isObjectVisible)

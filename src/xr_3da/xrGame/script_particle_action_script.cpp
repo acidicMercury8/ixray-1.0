@@ -29,6 +29,6 @@ void CScriptParticleAction::script_register(lua_State *L)
 			.def("set_position",	&CScriptParticleAction::SetPosition)
 			.def("set_angles",		&CScriptParticleAction::SetAngles)
 			.def("set_velocity",	&CScriptParticleAction::SetVelocity)
-			.def("completed",		(bool (CScriptParticleAction::*)())(CScriptParticleAction::completed))
+			.def("completed",		(bool (CScriptParticleAction::*)())(&CScriptParticleAction::completed))
 	];
 }

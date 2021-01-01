@@ -18,8 +18,8 @@ void CUIButton::script_register(lua_State *L)
 	[
 		class_<CUIButton, CUIStatic>("CUIButton")
 		.def(							constructor<>())
-		.def("Init",					(void(CUIButton::*)(float,float,float,float))CUIButton::Init )
-		.def("Init",					(void(CUIButton::*)(LPCSTR,float,float,float,float))CUIButton::Init )
+		.def("Init",					(void(CUIButton::*)(float,float,float,float))&CUIButton::Init )
+		.def("Init",					(void(CUIButton::*)(LPCSTR,float,float,float,float))&CUIButton::Init )
 		.def("SetHighlightColor",		&CUIButton::SetHighlightColor)
 		.def("EnableTextHighlighting",	&CUIButton::EnableTextHighlighting)
 /*

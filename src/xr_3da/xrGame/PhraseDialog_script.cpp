@@ -37,10 +37,10 @@ void CPhraseDialogExporter::script_register(lua_State *L)
 	module(L)
 	[
 		class_<CPhrase>("CPhrase")
-		.def("GetPhraseScript",		CPhrase::GetPhraseScript),
+		.def("GetPhraseScript",		&CPhrase::GetPhraseScript),
 
 		class_<CPhraseDialog>("CPhraseDialog")
-		.def("AddPhrase",  (CPhrase*(CPhraseDialog::*)(LPCSTR text, int, int, int))CPhraseDialog::AddPhrase ),
+		.def("AddPhrase",  (CPhrase*(CPhraseDialog::*)(LPCSTR text, int, int, int))&CPhraseDialog::AddPhrase ),
 
 		class_<CPhraseScript>("CPhraseScript")
 		.def("AddPrecondition",		&CPhraseScript::AddPrecondition)

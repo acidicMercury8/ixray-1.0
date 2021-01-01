@@ -90,7 +90,7 @@ void	CGameSpy_Browser::LoadGameSpy()
 
 }
 
-static services_checked = false;
+static bool services_checked = false;
 
 bool	CGameSpy_Browser::Init(CServerList* pServerList)
 {

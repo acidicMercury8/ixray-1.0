@@ -44,6 +44,6 @@ void CScriptWatchAction::script_register(lua_State *L)
 			.def("direct",						&CScriptWatchAction::SetWatchDirection)		// time
 			.def("type",						&CScriptWatchAction::SetWatchType)
 			.def("bone",						&CScriptWatchAction::SetWatchBone)
-			.def("completed",					(bool (CScriptWatchAction::*)())(CScriptWatchAction::completed))
+			.def("completed",					(bool (CScriptWatchAction::*)())(&CScriptWatchAction::completed))
 	];
 }
