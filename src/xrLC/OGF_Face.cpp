@@ -300,7 +300,8 @@ void OGF::CalculateTB()
 		i_color.push_back	(iV.Color._x);	i_color.push_back	(iV.Color._y);	i_color.push_back	(iV.Color._z);
 		i_tc.push_back		(iV.UV[0].x);	i_tc.push_back		(iV.UV[0].y);	i_tc.push_back		(0);
 	}
-	for (itOGF_F face_it=faces.begin(); face_it!=faces.end(); face_it++){
+	itOGF_F face_it;
+	for (face_it=faces.begin(); face_it!=faces.end(); face_it++){
 		OGF_Face	&iF = *face_it;
 		i_indices.push_back	(iF.v[0]);
 		i_indices.push_back	(iF.v[1]);

@@ -12,7 +12,7 @@
 #pragma comment(lib,"IMAGEHLP.LIB")
 #pragma comment(lib,"winmm.LIB")
 #pragma comment(lib,"X:\\xrCDB.lib")
-#pragma comment(lib,"X:\\FreeImage.lib")
+#pragma comment(lib,"FreeImage.lib")
 #pragma comment(lib,"X:\\xrCore.lib")
 
 CBuild*	pBuild		= NULL;
