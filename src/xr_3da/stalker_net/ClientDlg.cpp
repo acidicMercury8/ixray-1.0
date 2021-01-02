@@ -230,7 +230,7 @@ END_MESSAGE_MAP()
 // CClientDlg message handlers
 /////////////////////////////////////////////////////////
 #include <dplay8.h>
-#include <dxerr8.h>
+#include <dxerr.h>
 #include <vector>
 IDirectPlay8Client 		*g_pClient;
 IDirectPlay8Address		*g_pClientDeviceAddress	;
@@ -392,7 +392,7 @@ void CClientDlg::RemoveServerFromList	(SBServer server)
 	};
 };
 
-static inAdd = false;
+static bool inAdd = false;
 void CClientDlg::AddServerToList		(SBServer server)
 {
 	if (!server) return;
@@ -874,7 +874,7 @@ BOOL	CClientDlg::Client_EnumHosts()
 	};
 	if (hr != S_OK)
 	{
-		const char* text = DXGetErrorString8(hr);
+		const char* text = DXGetErrorString(hr);
 		int x=0;
 		x=x;
 	}
