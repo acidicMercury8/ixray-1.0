@@ -80,10 +80,10 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugNoExceptions|Win32'">$(Configuration)\</IntDir>
     <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='DebugNoExceptions|Win32'">true</IgnoreImportLibrary>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugNoExceptions|Win32'">true</LinkIncremental>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">X:\src\xrCore;X:\sdk\Xiph\Include;X:\sdk\eax\Include;X:\sdk\dx9sdk\dx9sdk\include;X:\sdk\OpenAL\Include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">X:\src\xrCore;X:\sdk\Xiph\Include;X:\sdk\eax\Include;X:\sdk\dxsdk_mar2009\Include;X:\sdk\OpenAL\Include;$(IncludePath)</IncludePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">X:\sdk\Xiph\Libs;X:\sdk\OpenAL\libs;X:\sdk\eax;X:\;$(LibraryPath)</LibraryPath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">X:\src\xrCore;X:\sdk\Xiph\Include;X:\sdk\eax\Include;X:\sdk\dx9sdk\dx9sdk\include;X:\sdk\OpenAL\Include;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">X:\src\xrCore;X:\sdk\Xiph\Include;X:\sdk\eax\Include;X:\sdk\dx9sdk\dx9sdk\include;X:\sdk\OpenAL\Include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">X:\src\xrCore;X:\sdk\Xiph\Include;X:\sdk\eax\Include;X:\sdk\dxsdk_mar2009\Include;X:\sdk\OpenAL\Include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">X:\src\xrCore;X:\sdk\Xiph\Include;X:\sdk\eax\Include;X:\sdk\dxsdk_mar2009\Include;X:\sdk\OpenAL\Include;$(IncludePath)</IncludePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">X:\sdk\Xiph\Libs;X:\sdk\OpenAL\libs;X:\sdk\eax;X:\;$(LibraryPath)</LibraryPath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">X:\sdk\Xiph\Libs;X:\sdk\OpenAL\libs;X:\sdk\eax;X:\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>

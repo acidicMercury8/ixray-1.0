@@ -46,7 +46,7 @@ CInput::CInput						( BOOL bExclusive, int deviceForInit)
 	//===================== Dummy pack
 	iCapture	(&dummyController);
 
-	if (!pDI) CHK_DX(DirectInputCreateEx( GetModuleHandle(NULL), DIRECTINPUT_VERSION, IID_IDirectInput7, (void**)&pDI, NULL ));
+	if (!pDI) CHK_DX(DirectInput8Create( GetModuleHandle(NULL), DIRECTINPUT_VERSION, IID_IDirectInput8, (void**)&pDI, NULL ));
 
 	// KEYBOARD
 	if (deviceForInit & keyboard_device_key)
