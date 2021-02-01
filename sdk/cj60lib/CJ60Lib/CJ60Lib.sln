@@ -4,16 +4,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CJ60Lib", "CJ60Lib.vcxproj"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CJ60StaticLib", "CJ60StaticLib.vcxproj", "{DDC7D4F4-4D0F-2F83-3F82-D72931C831B3}"
 EndProject
-Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Demo_Controls", "..\Demo_Controls\Demo_Controls.dsp", "{AD3231F6-FEE9-4D22-A6A8-AC6269067F9A}"
-EndProject
-Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Demo_DevStudio", "..\Demo_DevStudio\Demo_DevStudio.dsp", "{1D997AFD-BF24-4E22-A7B3-93153E3982FC}"
-EndProject
-Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Demo_Explorer", "..\Demo_Explorer\Demo_Explorer.dsp", "{DD9990B0-9657-47B3-94FA-D48266AFD5C6}"
-EndProject
-Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Demo_Outlook", "..\Demo_Outlook\Demo_Outlook.dsp", "{604E048C-3AA8-41F3-8BE9-43F3FE374C14}"
-EndProject
-Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "StaticTest", "..\StaticTest\StaticTest.dsp", "{48B16EF4-B2A1-4485-8CA0-00B7221D83D0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
