@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="CODE.H" />
+    <ClInclude Include="FIXED.H" />
+    <ClInclude Include="INTERNAL.H" />
+    <ClInclude Include="SEER.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CALLASM.C" />
+    <ClCompile Include="COMPILER.C" />
+    <ClCompile Include="CONSTS.C" />
+    <ClCompile Include="DECLARE.c" />
+    <ClCompile Include="DICT.C" />
+    <ClCompile Include="EXPR.C" />
+    <ClCompile Include="HEADERS.C" />
+    <ClCompile Include="INITIAL.C" />
+    <ClCompile Include="INSTANCE.C" />
+    <ClCompile Include="PARSER.C" />
+    <ClCompile Include="PMEM.C" />
+    <ClCompile Include="PREPROC.C" />
+    <ClCompile Include="PROTECT.C" />
+    <ClCompile Include="SCRIPT_int.C" />
+    <ClCompile Include="VARS.C" />
+    <ClCompile Include="VCPUCODE.C" />
+    <ClCompile Include="VCPUDECO.C" />
+  </ItemGroup>
+</Project>
