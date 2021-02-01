@@ -8,7 +8,7 @@ File:dict.c
 Desc:dictionary struct - for linked list of symbols
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 
 ///////////////////////////////////////////////////////////////////////////

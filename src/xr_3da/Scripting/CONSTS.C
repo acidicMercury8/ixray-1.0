@@ -8,7 +8,7 @@ File:consts.c
 Desc:constants (but without vcpu opcodes)
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 
 pmem scExternals={NULL,0,0};

@@ -10,7 +10,7 @@ Desc:working on `_value's
 #define INTERNAL_FILE
 #define EXACT_DEBUG
 #include <stdio.h>
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #include "code.h"
 

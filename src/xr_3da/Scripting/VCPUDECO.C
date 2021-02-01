@@ -9,7 +9,7 @@ Desc:decoding and running script
 ************************************************************************/
 #define INTERNAL_FILE
 #include <stdio.h>
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #include "code.h"
 #include "fixed.h"

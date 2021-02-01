@@ -10,7 +10,7 @@ Desc:reading declaration of symbols(types,functions and variables)
 99.07.05 Classes support started
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #include "code.h"
 

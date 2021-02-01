@@ -9,7 +9,7 @@ Desc:code generation for VCPU
 ************************************************************************/
 #define INTERNAL_FILE
 #include <stdio.h>
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #include "code.h"
 #define PUSHAlways_INT 1

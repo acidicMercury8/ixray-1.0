@@ -8,7 +8,7 @@ File:preproc.c
 Desc:preprocessor
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 /*
 .int..

@@ -45,7 +45,7 @@ the subroutine [ibidem].
        How? How to avoid this? Maybe disallow passing those "certain types".
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #define USE_DEDICATED 1
 

@@ -8,7 +8,7 @@ File:script.c
 Desc:debug & initialization & other
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #include <sys/stat.h>
 #include <windows.h>

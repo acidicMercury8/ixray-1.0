@@ -9,7 +9,7 @@ Desc:priorities, "protected" calling exported functions in script
 ************************************************************************/
 #include <stdio.h>
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 
 void  SAPI scSet_Priority(scInstance *Ins, int priority_level)

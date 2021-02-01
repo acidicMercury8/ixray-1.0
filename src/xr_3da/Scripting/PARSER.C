@@ -8,7 +8,7 @@ File:parser.c
 Desc:parsing - reading lexemas from input
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 
 int parser_Comment=0;

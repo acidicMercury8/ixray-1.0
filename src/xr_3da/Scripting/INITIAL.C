@@ -8,7 +8,7 @@ File:compiler.c
 Desc:initialization routines
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #include "code.h"
 

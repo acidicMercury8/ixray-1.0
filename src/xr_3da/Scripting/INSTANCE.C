@@ -8,7 +8,7 @@ File:instance.c
 Desc:creates and operates on instance of a script
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #include "code.h"
 

@@ -8,7 +8,7 @@ File:pmem.c
 Desc:pmem struct - infinite buffor
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 typedef struct hash_Node{
         struct hash_Node *next;

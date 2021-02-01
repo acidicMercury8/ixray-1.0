@@ -8,7 +8,7 @@ File:expressi.c
 Desc:calculating expressions
 ************************************************************************/
 #define INTERNAL_FILE
-#include <seer.h>
+#include "seer.h"
 #include "internal.h"
 #include "code.h"
 
