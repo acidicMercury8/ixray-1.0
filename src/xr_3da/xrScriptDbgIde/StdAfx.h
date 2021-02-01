@@ -1,5 +1,7 @@
 #pragma once
 
+#define _WIN32_WINNT 0x0501
+
 #define VC_EXTRALEAN		// Exclude rarely-used stuff from Windows headers
 
 #include <afxwin.h>         // MFC core and standard components
@@ -14,8 +16,7 @@
 #include <shellapi.h>
 
 #include <cj60lib.h>
-//#include "../xrGame/script_debugger_messages.h"
-#include "/Projects/xray/xrGame/script_debugger_messages.h"
+#include "../xrGame/script_debugger_messages.h"
 
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>

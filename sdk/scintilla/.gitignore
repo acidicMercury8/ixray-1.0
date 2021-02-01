@@ -1,0 +1,9 @@
+# Ignoring of different binaries and another temporary files in Scintilla
+
+# Build results
+win32/*.obj
+win32/*.res
+bin/*.lib
+bin/*.exp
+bin/*.pdb
+bin/*.dll

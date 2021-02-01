@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CJ60Lib", "CJ60Lib.vcxproj", "{8462BAEC-D384-F756-1F6C-7C502C2DE632}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CJ60StaticLib", "CJ60StaticLib.vcxproj", "{DDC7D4F4-4D0F-2F83-3F82-D72931C831B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8462BAEC-D384-F756-1F6C-7C502C2DE632}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8462BAEC-D384-F756-1F6C-7C502C2DE632}.Debug|Win32.Build.0 = Debug|Win32
+		{8462BAEC-D384-F756-1F6C-7C502C2DE632}.Release|Win32.ActiveCfg = Release|Win32
+		{8462BAEC-D384-F756-1F6C-7C502C2DE632}.Release|Win32.Build.0 = Release|Win32
+		{8462BAEC-D384-F756-1F6C-7C502C2DE632}.Template|Win32.ActiveCfg = Release|Win32
+		{8462BAEC-D384-F756-1F6C-7C502C2DE632}.Template|Win32.Build.0 = Release|Win32
+		{DDC7D4F4-4D0F-2F83-3F82-D72931C831B3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DDC7D4F4-4D0F-2F83-3F82-D72931C831B3}.Debug|Win32.Build.0 = Debug|Win32
+		{DDC7D4F4-4D0F-2F83-3F82-D72931C831B3}.Release|Win32.ActiveCfg = Release|Win32
+		{DDC7D4F4-4D0F-2F83-3F82-D72931C831B3}.Release|Win32.Build.0 = Release|Win32
+		{DDC7D4F4-4D0F-2F83-3F82-D72931C831B3}.Template|Win32.ActiveCfg = Template|Win32
+		{DDC7D4F4-4D0F-2F83-3F82-D72931C831B3}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

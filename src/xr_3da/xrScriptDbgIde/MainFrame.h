@@ -14,8 +14,7 @@
 #include "ScriptThreadsBar.h"
 
 #define R_ASSERT(x) ASSERT(x)
-//#include "../xrGame/mslotutils.h"
-#include "/Projects/xray/xrGame/mslotutils.h"
+#include "../xrGame/mslotutils.h"
 
 class CMainFrame : public CCJMDIFrameWnd
 {
