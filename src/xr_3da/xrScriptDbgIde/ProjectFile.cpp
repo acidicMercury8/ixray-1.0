@@ -13,8 +13,7 @@
 #include "ScintillaView.h"
 #include "LuaView.h"
 
-//#include "../xrGame/mslotutils.h"
-#include "/Projects/xray/xrGame/mslotutils.h"
+#include "../xrGame/mslotutils.h"
 
 #ifdef _DEBUG
 #undef THIS_FILE

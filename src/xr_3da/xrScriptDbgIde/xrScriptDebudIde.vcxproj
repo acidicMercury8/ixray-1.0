@@ -52,13 +52,16 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">X:\sdk\cj60lib\Include;X:\sdk\scintilla\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">X:\sdk\cj60lib\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">X:\sdk\cj60lib\Include;X:\sdk\scintilla\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">X:\sdk\cj60lib\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>.\include\cj60;.\include\scintilla;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -71,6 +74,8 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalDependencies>cj60lib.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -91,10 +96,10 @@
       </HeaderFileName>
     </Midl>
     <PostBuildEvent>
-      <Command>echo copying files to e:\exchange2\debugger
-copy $(TargetDir)$(TargetPath) e:\exchange2\debugger
-copy $(TargetDir)Scilexer.dll e:\exchange2\debugger
-copy $(TargetDir)CJ60Lib.dll e:\exchange2\debugger
+      <Command>
+echo copying files to X:\
+copy $(TargetDir)..\..\..\..\sdk\scintilla\bin\Scilexer.dll X:\
+copy $(TargetDir)..\..\..\..\sdk\cj60lib\Lib\CJ60Lib.dll X:\
 </Command>
     </PostBuildEvent>
     <ResourceCompile>
@@ -105,8 +110,7 @@ copy $(TargetDir)CJ60Lib.dll e:\exchange2\debugger
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\include\cj60;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -119,6 +123,8 @@ copy $(TargetDir)CJ60Lib.dll e:\exchange2\debugger
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalDependencies>cj60lib.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -140,12 +146,11 @@ copy $(TargetDir)CJ60Lib.dll e:\exchange2\debugger
       </HeaderFileName>
     </Midl>
     <PostBuildEvent>
-      <Command>echo copying $(TargetPath) to e:\exchange2\debugger
-copy $(TargetPath) e:\exchange2\debugger
-echo copying Scilexer.dll to e:\exchange2\debugger
-copy $(TargetDir)Scilexer.dll e:\exchange2\debugger
-echo copying CJ60Lib.dll to e:\exchange2\debugger
-copy $(TargetDir)CJ60Lib.dll e:\exchange2\debugger
+      <Command>
+echo copying Scilexer.dll to X:\
+copy $(TargetDir)..\..\..\..\sdk\scintilla\bin\Scilexer.dll X:\
+echo copying CJ60Lib.dll to X:\
+copy $(TargetDir)..\..\..\..\sdk\cj60lib\Lib\CJ60Lib.dll X:\
 </Command>
     </PostBuildEvent>
     <ResourceCompile>
