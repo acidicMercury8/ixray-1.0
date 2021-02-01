@@ -380,7 +380,7 @@ void CCJControlBar::OnLButtonUp(UINT nFlags, CPoint point)
     CControlBar::OnLButtonUp(nFlags, point);
 }
 
-UINT CCJControlBar::OnNcHitTest(CPoint point) 
+LRESULT CCJControlBar::OnNcHitTest(CPoint point) 
 {
 	return HTCLIENT;
 }

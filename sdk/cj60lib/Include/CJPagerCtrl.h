@@ -127,8 +127,8 @@ public:
 	// Generated message map functions
 protected:
 	//{{AFX_MSG(CCJPagerCtrl)
-	virtual BOOL OnPagerScroll(NMPGSCROLL* pNMPGScroll, LRESULT * pResult);
-	virtual BOOL OnPagerCalcSize(NMPGCALCSIZE * pNMPGCalcSize, LRESULT* pResult);
+	virtual BOOL OnPagerScroll(NMHDR* pNMPGScroll, LRESULT * pResult);
+	virtual BOOL OnPagerCalcSize(NMHDR* pNMHDRPGCalcSize, LRESULT* pResult);
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };

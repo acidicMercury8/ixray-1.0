@@ -8,7 +8,6 @@
 //
 
 #include <shlobj.h>
-#include <Shlwapi.h>
 #pragma comment(lib,"Shlwapi.lib") 
 
 #include "ShellPidl.h"

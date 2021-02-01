@@ -35,8 +35,8 @@ struct DROPDOWNBUTTON {
 };
 
 // these define size of grippers
-const GRIP_WIDTH   = 3;
-const GRIP_MARGIN  = 5;
+const int GRIP_WIDTH   = 3;
+const int GRIP_MARGIN  = 5;
 
 // flags stored in item data
 #define	ITEMF_INITIALIZED	0x01 // item data initialized

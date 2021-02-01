@@ -86,8 +86,9 @@ BOOL CCJPagerCtrl::Create(DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UIN
 /////////////////////////////////////////////////////////////////////////////
 // CCJPagerCtrl message handlers
 
-BOOL CCJPagerCtrl::OnPagerCalcSize(NMPGCALCSIZE* pNMPGCalcSize, LRESULT* pResult)
+BOOL CCJPagerCtrl::OnPagerCalcSize(NMHDR* pNMHDRPGCalcSize, LRESULT* pResult)
 {
+	NMPGCALCSIZE* pNMPGCalcSize = (NMPGCALCSIZE*)pNMHDRPGCalcSize;
 	switch(pNMPGCalcSize->dwFlag)
     {
 	case PGF_CALCWIDTH:
@@ -103,7 +104,7 @@ BOOL CCJPagerCtrl::OnPagerCalcSize(NMPGCALCSIZE* pNMPGCalcSize, LRESULT* pResult
 	return FALSE;	// Let parent handle message
 }
 
-BOOL CCJPagerCtrl::OnPagerScroll(NMPGSCROLL* pNMPGScroll, LRESULT* pResult)
+BOOL CCJPagerCtrl::OnPagerScroll(NMHDR* pNMPGScroll, LRESULT* pResult)
 {
     *pResult = 0;
 	return FALSE;	// Let parent handle message

@@ -249,7 +249,7 @@ BOOL CCJSizeDockBar::OnSetCursor(CWnd* pWnd, UINT nHitTest, UINT message)
 		CDockBar::OnSetCursor(pWnd, nHitTest, message):FALSE;
 }
 
-UINT CCJSizeDockBar::OnNcHitTest(CPoint point) 
+LRESULT CCJSizeDockBar::OnNcHitTest(CPoint point) 
 {
 	HitTest(point);
 	return (m_bOkToDrag)?HTBORDER:CDockBar::OnNcHitTest(point);

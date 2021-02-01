@@ -1,0 +1,8 @@
+# Ignoring of different binaries and another temporary files in CJ60Lib
+
+# Build results
+CJ60Lib/StaticDebug/
+CJ60Lib/StaticRelease/
+CJ60Lib/Debug/
+CJ60Lib/Release/
+Lib/

@@ -73,13 +73,13 @@ BOOL CCoolMenuManager::bTRACE = FALSE;
 #endif
 
 // constants used for drawing
-const CXGAP = 1;				// num pixels between button and text
-const CXTEXTMARGIN = 2;		// num pixels after hilite to start text
-const CXBUTTONMARGIN = 2;	// num pixels wider button is than bitmap
-const CYBUTTONMARGIN = 2;	// ditto for height
+const int CXGAP = 1;				// num pixels between button and text
+const int CXTEXTMARGIN = 2;		// num pixels after hilite to start text
+const int CXBUTTONMARGIN = 2;	// num pixels wider button is than bitmap
+const int CYBUTTONMARGIN = 2;	// ditto for height
 
 // DrawText flags
-const DT_MYSTANDARD = DT_SINGLELINE|DT_LEFT|DT_VCENTER;
+const int DT_MYSTANDARD = DT_SINGLELINE|DT_LEFT|DT_VCENTER;
 
 // identifies owner-draw data as mine
 const LONG MYITEMID = MAKELONG(MAKEWORD(_T('m'),_T('i')),MAKEWORD(_T('d'),_T('0')));
@@ -768,7 +768,8 @@ LRESULT CCoolMenuManager::OnMenuChar(UINT nChar, UINT nFlags, CMenu* pMenu)
 	CUIntArray arItemsMatched;		// items that match the character typed
 
 	UINT nItem = pMenu->GetMenuItemCount();
-	for (UINT i=0; i< nItem; i++) {
+	UINT i = 0;
+	for (i=0; i< nItem; i++) {
 		// get menu info
 		CMenuItemInfo info;
 		info.fMask = MIIM_DATA | MIIM_TYPE | MIIM_STATE;

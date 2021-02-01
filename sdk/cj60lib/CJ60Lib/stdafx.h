@@ -12,6 +12,8 @@
 
 #define VC_EXTRALEAN		// Exclude rarely-used stuff from Windows headers
 
+#define _WIN32_WINNT 0x0501
+
 #include <afxwin.h>         // MFC core and standard components
 #include <afxext.h>         // MFC extensions
 
@@ -46,7 +48,7 @@
 
 #include <afxpriv.h>
 #include <afxtempl.h>
-#include <..\src\afximpl.h>
+#include <..\src\mfc\afximpl.h>
 
 #define AFX_IDW_SIZEBAR_LEFT	AFX_IDW_DOCKBAR_LEFT	+ 4
 #define AFX_IDW_SIZEBAR_RIGHT	AFX_IDW_DOCKBAR_RIGHT	+ 5
